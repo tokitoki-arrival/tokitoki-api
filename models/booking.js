@@ -12,8 +12,8 @@ module.exports = (sequelize, DataTypes) => {
         }
       },
       guestName: { allowNull: false, type: DataTypes.STRING },
-      checkIn: { allowNull: false, type: DataTypes.DATE },
-      checkOut: { allowNull: false, type: DataTypes.DATE },
+      checkIn: { allowNull: false, type: DataTypes.STRING },
+      checkOut: { allowNull: false, type: DataTypes.STRING },
       status: {
         allowNull: false,
         type: DataTypes.ENUM("checked in", "not checked in")
